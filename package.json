@@ -1,0 +1,19 @@
+{
+  "name": "playwright-bdd",
+  "version": "1.0.0",
+  "scripts": {
+  "test": "cucumber-js",
+  "test:feature": "cucumber-js",
+  "cucumber-report": "node generate-report.ts",
+  "pw-report": "npx playwright show-report",
+  "test:full": "npm test && npm run cucumber-report"
+},
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.58.2",
+    "multiple-cucumber-html-reporter": "^3.10.0",
+    "playwright-bdd": "^8.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
