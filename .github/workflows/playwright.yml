@@ -3,6 +3,10 @@ name: Playwright_TS_BDD Web Tests
 run-name: "Playwright_TS_BDD ${{ inputs.test_suite || 'smoke' }} tests on ${{ inputs.test_environment || 'QA' }} by @${{ github.actor }}"
 
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   schedule:
     - cron: '0 12 * * 1-5'
   pull_request_target:
